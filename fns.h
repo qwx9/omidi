@@ -1,0 +1,10 @@
+FM_OPL*	ym3812_init(u32int, u32int);
+void	ym3812_shutdown(FM_OPL *);
+void	ym3812_reset_chip(FM_OPL *);
+int	ym3812_write(FM_OPL *, int, int);
+uchar	ym3812_read(FM_OPL *, int);
+int	ym3812_timer_over(FM_OPL *, int);
+void	ym3812_update_one(FM_OPL *, OPLSAMPLE *, int);
+void	ym3812_set_timer_handler(FM_OPL *, OPL_TIMERHANDLER, void *);
+void	ym3812_set_irq_handler(FM_OPL *, OPL_IRQHANDLER, void *);
+void	ym3812_set_update_handler(FM_OPL *, OPL_UPDATEHANDLER, void *);
